@@ -8,6 +8,11 @@ def myHomeView(request, *args, **kwargs):
     print(request.user)
     return render(request, "home.html",{})
 
+def usandoPlantilla(request, *args, **kwargs):
+    print(args, kwargs)
+    print(request.user)
+    return render(request, "home2.html",{})
+
 def anotherView(*args, **kwargs):
     return HttpResponse('<h2>Solo otra página</h2>')
 
