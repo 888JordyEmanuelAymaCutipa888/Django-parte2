@@ -6,3 +6,6 @@ class DestinoTuristico(models.Model):
     descripcionCiudad = models.CharField(max_length = 100)
     precioTour = models.IntegerField()#(max_digits=3)
     ofertaTour = models.BooleanField()
+    oferta1 = models.BooleanField(null = True)
+    oferta2 = models.BooleanField(default = True)
+    oferta1 = models.TextField(blank = True)
