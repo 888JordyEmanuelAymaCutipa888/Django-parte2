@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def myHomeView(*args, **kwargs):
+def myHomeView(request, *args, **kwargs):
+    print(args, kwargs)
+    print(request.user)
     return HttpResponse('<h1>HOLA MUNDO DESDE DJANDO EN VIEWS.PY</h1>')
 
 def anotherView(*args, **kwargs):
